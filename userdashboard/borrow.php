@@ -26,7 +26,7 @@ if ($row['count'] > 0) {
 
     if ($book_row['quantity'] > 0) {
         // Insert loan record
-        $stmt = $conn->prepare("INSERT INTO loans (user_id, book_id, due_date) VALUES (?, ?, DATE_ADD(NOW(), INTERVAL 14 DAY))");
+        $stmt = $conn->prepare("INSERT INTO loans (user_id, book_id, due_date) VALUES (?, ?, DATE_ADD(NOW(), INTERVAL 1 DAY))");
         $stmt->bind_param("ii", $user_id, $book_id);
         if ($stmt->execute()) {
             // Update book quantity
