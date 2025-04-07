@@ -29,12 +29,13 @@ display: flex;
     background-color: 
     rgb(37,58,85);
     padding: 20px;
-    width: 80%;
+    width: 90%;
     text-align: center;
     border-radius: 20px;
     align-items: center;
     justify-content:center;
     margin : 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
 }
 .adminOptions{
     display: flex;
@@ -59,7 +60,7 @@ display: flex;
 .mangt{
     background-color: white;
     padding: 0 20px 20px 20px;
-    width: 60%;  
+    width: 100%;  
     border-radius: 20px;
     margin: 50px 50px 50px 50px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
@@ -198,4 +199,27 @@ th, td {
 .due_date:hover{
     color: orange;
 }           
+.adminOptions .logout {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+}
 
+.adminOptions .logout:hover {
+    background-color: darkred;
+    color: white;   
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+}
+.adminOptions .logout i {
+    margin-right: 5px; /* Space between icon and text */
+}

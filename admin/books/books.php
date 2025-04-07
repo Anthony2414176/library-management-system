@@ -19,6 +19,7 @@ $result = $conn->query("SELECT * FROM books");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/admin.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
     <title>Admin - Manage Books</title>
 </head>
 <body>
@@ -26,6 +27,9 @@ $result = $conn->query("SELECT * FROM books");
         <div class="adminOptions">
             <a href="books.php" class="adminOption active">Book Managemant</a>
             <a href="../users/users.php" class="adminOption">User Managemant</a>
+            <a href="../../logout.php" class="adminOption logout">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
         </div>
     </div>
     <div class="bookTable">

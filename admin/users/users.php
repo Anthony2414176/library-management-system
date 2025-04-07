@@ -26,6 +26,9 @@ $result = $conn->query("SELECT * FROM users");
         <div class="adminOptions">
             <a href="../books/books.php" class="adminOption active">Book Managemant</a>
             <a href="users.php" class="adminOption">User Managemant</a>
+            <a href="../../logout.php" class="adminOption logout">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
         </div>
     </div>
 
